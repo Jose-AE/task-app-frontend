@@ -1,0 +1,39 @@
+.task-container{
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #9a9a9a;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.task-container i{
+    height: 100%;
+    padding-right: 10px;
+    cursor: pointer;
+
+    transition: transform 0.1s;
+}
+
+.task-container i:hover{
+    transform: scale(1.1);
+}
+
+.task-text{
+    
+    overflow-wrap: break-word;
+    max-width: 320px;
+    padding: 5px 0 10px 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.task-text.complete{
+    text-decoration: line-through;
+}
